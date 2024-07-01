@@ -1,0 +1,55 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "exported_at": "2024-04-08T17:51:47+00:00",
+    "name": "VerseVM",
+    "author": "info@paladinsrv.com",
+    "description": "Bringing virtual machines to Pterodactyl",
+    "features": null,
+    "docker_images": {
+        "Debian 12": "ghcr.io/zenllc/versevm:debian-12",
+        "Alpine": "ghcr.io/zenllc/versevm:arch",
+        "Arch": "ghcr.io/zenllc/versevm:alpine",
+        "Troubleshooting Shell": "ghcr.io\/david1117dev\/vpsegg:shell"
+    },
+    "file_denylist": [],
+    "startup": "#Thanks for using VerseVM",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": [\r\n        \"Booting\",\r\n        \"Starting VerseVM\"\r\n    ]\r\n}",
+        "logs": "{}",
+        "stop": "^C^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": null,
+            "container": "debian",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Additional ports",
+            "description": "Add your additional ports, that you want to bind to the guest, separated by a space. For example 1234 5678 will be bound to 1234 5678 on guest machine",
+            "env_variable": "ADDITIONAL_PORTS",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "nullable|string",
+            "field_type": "text"
+        },
+        {
+            "name": "Enable VNC",
+            "description": "Enable vnc for all images (including server ones)",
+            "env_variable": "VNC",
+            "default_value": "0",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|boolean",
+            "field_type": "text"
+        }
+    ]
+}
