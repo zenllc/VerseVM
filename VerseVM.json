@@ -10,9 +10,9 @@
     "description": "Bringing virtual machines to Pterodactyl",
     "features": null,
     "docker_images": {
-        "Debian 12": "ghcr.io/zenllc/versevm:debian-12",
-        "Alpine": "ghcr.io/zenllc/versevm:arch",
-        "Arch": "ghcr.io/zenllc/versevm:alpine",
+        "Debian 12": "ghcr.io\/zenllc\/versevm:debian-12",
+        "Alpine": "ghcr.io\/zenllc\/versevm:arch",
+        "Arch": "ghcr.io\/zenllc\/versevm:alpine",
         "Troubleshooting Shell": "ghcr.io\/david1117dev\/vpsegg:shell"
     },
     "file_denylist": [],
