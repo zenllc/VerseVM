@@ -20,7 +20,7 @@
         "Windows 98": "ghcr.io\/zenllc\/versevm:win98-desktop",
         "Kali": "ghcr.io\/zenllc\/versevm:kali-desktop",
         "Tools (Advanced)": "ghcr.io\/zenllc\/versevm:tools",
-        "Troubleshooting Shell": "ghcr.io\/zenllc\/versevm:shell"
+        "Troubleshooting Shell": "ghcr.io\/david1117dev\/vpsegg:shell"
     },
     "file_denylist": [],
     "startup": "#Thanks for using VerseVM",
